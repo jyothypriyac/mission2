@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gooddiet.css">
+    <script src="gooddietscript.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>GOOD DIETS</title>
+</head>
+
+<body>
+    <div id="null"> X </div>
+
+    <div class="banner">
+        <ul class="menuList">
+            <li class="menuItem"><a class="healthyRe" href="#healthy recipes" >HEALTHY RECIPES</a></li>
+            <li class="menuItem"><a href="#diet">SPECIAL DIET</a></li>
+            
+            <li class="menuItem"><a href="#diabetes">DIABETES</a></li>
+            <li class="menuItem"><a href="#news">NEWS</a></li>
+            <li class="menuItem"><a href="#contact">CONTACT US</a></li>
+            <li class="menuItem"><a href="#Find a Doctor">FIND A DOCTOR</a></li>
+        </ul>
+
+    </div>
+    <div class="row">
+        <div class="colum">
+            <h1 id="name">GOOD DIETS</h1>
+            <p class="aboutText">Tool,resources,and support for your
+                healthy diet and eating habits.
+                We want to help you own your well-being.
+
+                Healthline covers all facets of physical and mental
+                health openly and objectively because we’re here for the
+                whole person — for your whole life. And because people come
+                to us with unique challenges, we listen closely and put empathy
+                first across our organization. In everything from our personal
+                perspectives to our commitment to inclusivity,
+                you’ll see that we feel with you.</p>
+        </div>
+        <div id="image"><img src="./images/dietnobg2.jpg" alt=""></div>
+
+    </div>
+    <div>
+        <nav>
+            <ul class="dietPlans">
+                <li class="plan1"><button onclick="findData('hunger')">Feeling hungry?here's what to do..</button></li>
+              
+                <li class="plan2"><button onclick="findData('health')">healthy eating and Nutrition?here's what to do..</button></li>
+          </ul>
+        </nav>
+        <div id="displayDiv"></div>
+    </div><br>
+    <h2>NUTRITION TIPS FOR EVERY AGE OF LIFE</h2>
+    <div class="lineOfImage">
+        <div class="lineOfImage1 imageDiv">
+            <button class="imagesAgesButton" onclick="myFunction('Pregnancy')">click me!</button>
+            <img class="imagesAges" href="pregnancy.html" src="./images/Pregnancy-diet.jpg" alt="" />
+        </div>
+
+        <div class="lineOfImage2 imageDiv">
+            <button class="imagesAgesButton" onclick="myFunction('Feed')">click me!</button>
+            <img class="imagesAges" src="./images/feeding_1023856231819151598.jpg" alt="" />
+        </div>
+
+        <div class="lineOfImage3 imageDiv">
+            <button class="imagesAgesButton" onclick="myFunction('kids')">click me!</button>
+            <img class="imagesAges" src="./images/kids.jpg" alt="" />
+        </div>
+        <div class="lineOfImage4 imageDiv">
+
+            <button class="imagesAgesButton" onclick="myFunction('Adult')">click me!</button>
+            <img class="imagesAges" src="./images/young_SWNS_EGG_WEIGHTLOSS_005jpeg.jpg" alt="" />
+        </div>
+        <div class="lineOfImage5 imageDiv">
+            <button class="imagesAgesButton" onclick="myFunction('Old')">click me!</button>
+            <img class="imagesAges" src="./images/elder.jfif" alt="" />
+        </div>
+        
+    </div>
+    <div class="popup">
+        <span class="popuptext" id="myPopup">Popup text...</span>
+      </div>
+
+
+    <div class="containerBmi">
+        <h1>BMI Calculator:The BMI Calculator is an innovative tool
+            that gives personalized results based on
+            different weight and fitness measurements.</h1>
+
+
+        <p><input type="number" id="height" placeholder="Height (in cm)" /></p>
+
+        <p><input type="number" id="weight" placeholder="Weight (in kg)" /></p>
+
+        <button id="btn" onclick="calculateBMI()">Calculate BMI</button>
+
+        <div id="result"></div>
+    </div>
+
+    
+
+
+    <div class="form">
+        <h1 class="formText">SIGN UP FOR FITNESS NEWSLETTER
+        </h1>
+
+        <form class="subscriptionForm">
+            <div style="width: 84%;">
+                    <label for="text" value="">NAME:
+                    <input type="text"></label>
+
+                <label for="mail">EMAIL ID:<input type="text"></label><br>
+                </br>
+                <button>SUBSCRIBE</button>
+            </div>
+         
+
+
+
+            <div class="socialMedia">
+
+                <a href="#" class="fa fa-facebook"></a><br>
+                <a href="#" class="fa fa-instagram "></a>
+                <a href="#" class="fa fa-youtube "></a>
+
+            </div>
+
+        </form>
+    </div>
+    <footer>copyrigt@2024, Jyothypriyac</footer>
+
+
+
+</body>
+
+</html>

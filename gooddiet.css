@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+  margin: 0;
+  background-color: white;
+  font-style: normal;
+  font-weight: bolder;
+  color: green;
+}
+button{
+  z-index:99;
+  box-shadow: 4px 4px rgba(5, 86, 75, 0.333);
+  background-color:  green;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+#null {
+  background-color: green;
+  padding: 4PX;
+}
+/* ==banner== */
+
+.banner {
+  background-color: rgb(197, 234, 182);
+  display: flex;
+  margin: 0;
+  padding: 2px;
+  overflow: hidden;
+  width: 100%;
+}
+.menuList {
+  width: 90%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  font-size: larger;
+}
+.menuItem a {
+  display: flex;
+  color: green;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menuItem a:hover {
+  background-color: rgb(207, 225, 207);
+}
+
+/*== webname and main image== */
+#name {
+  font-size: 52px;
+color: green;
+font-family: Lorem ipsum dolor sit amet;
+
+  }
+  
+
+.aboutText {
+  margin: 0;
+  height: 25%;
+  font-size: 125%;
+  text-align: left;
+  width:95%
+}
+
+.row {
+  display: flex;
+  padding: 2%;
+  justify-content: space-evenly;
+}
+
+.colum{
+  width: 40%;
+}
+
+/*= button feeling hungry and healthy= */
+
+#displayDiv {
+  width: 25%;
+  height: 120px;
+  margin-left: 40%;
+}
+
+.is-visible {
+  visibility: visible;
+}
+
+.is-Hidden {
+  visibility: hidden;
+}
+
+.dietPlans{
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+/* ==NUTRITION TIPS FOR EVERY AGE OF LIFE== */
+.lineOfImage {
+  height: 300px;
+  display: flex;
+  width: 100%;
+
+}
+
+.imagesAges {
+  height: 300px;
+  width: 100%;
+}
+
+
+.imagesAgesButton {
+  height: 30px;
+  width: 100px;
+  contain: content;
+  border: 1px solid black;
+  background-color: green;
+  display: none;
+  margin: 7%;
+  font-weight: bold;
+  color: white;
+  z-index: 9;
+}
+.imageDiv {
+  display: flex;
+  width: 20%;
+  height: 300px;
+
+}
+
+
+.lineOfImage1:hover .imagesAgesButton {
+  display: inline-block;
+  position: absolute;
+}
+
+.lineOfImage1:hover .imagesAges {
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+.lineOfImage2:hover .imagesAgesButton {
+  display: inline-block;
+  position: absolute;
+}
+
+.lineOfImage2:hover .imagesAges {
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+.lineOfImage3:hover .imagesAgesButton {
+  display: inline-block;
+  position: absolute;
+}
+
+.lineOfImage3:hover .imagesAges {
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+.lineOfImage4:hover .imagesAgesButton {
+  display: inline-block;
+  position: absolute;
+}
+
+.lineOfImage4:hover .imagesAges {
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+.lineOfImage5:hover .imagesAgesButton {
+  display: inline-block;
+  position: absolute;
+}
+
+.lineOfImage5:hover .imagesAges {
+  opacity: 0.4;
+  transition: 0.3s;
+}
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 10%;
+  width: 40%;
+}
+
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  background-color: green;
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  padding: 10px;
+
+  /* bottom: 125%; */
+  /* left: 50%; */
+  /* margin-left: -80px; */
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: green transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+/* BMI calculator */
+
+.containerBmi {
+  padding: 5%;
+  font-size: smaller;
+}
+#result{
+padding: 3%;
+}
+
+
+
+.form {
+  background-color: rgb(197, 234, 182);
+  padding: 2%;
+}
+
+.formText {
+  font-size: medium;
+}
+.subscriptionForm{
+  display:flex;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: rgb(223, 209, 147);
+
+}
+
+.socialMedia {
+  display: flex;
+  justify-content:space-evenly;
+  padding: 2%;
+  width: 10%;
+}
+
+
+
+footer {
+  color: white;
+  padding: 1%;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+}
