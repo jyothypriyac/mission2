@@ -1,4 +1,3 @@
-console.log("connected");
 
 //==feeling hungry and healthy//
 
@@ -11,7 +10,7 @@ const hungerText =
 const healthText =
   "Choose fish, poultry, beans, and nuts; limit red meat and cheese; avoid bacon, cold cuts, and other processed meats. Eat a variety of whole grains.";
 
-function findData(type) {
+function tipsForHunger(type) {
     let div = document.getElementById("displayDiv");
     if (type == "hunger") {
         div.innerHTML = hungerText;
@@ -60,7 +59,7 @@ let arrayContentOld = [
   "Yoghurt and low fat milk",
   "Colourful vegetables, legumes/beans",
 ];
-function myFunction(clickType) {
+function tipsForEveryAge(clickType) {
   let popupSpan = document.getElementById("myPopup");
   let str = "";
   if (clickType == "Pregnancy") {
